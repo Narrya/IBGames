@@ -1,0 +1,17 @@
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\bin\Debug\IBGames.exe.config
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\bin\Debug\IBGames.exe
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\bin\Debug\IBGames.pdb
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Debug\IBGames.LoginForm.resources
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Debug\IBGames.Properties.Resources.resources
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Debug\IBGames.RegistrationForm.resources
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Debug\IBGames.exe
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Debug\IBGames.pdb
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Debug\IBGames.Game.resources
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\bin\Debug\Model\IBDatabase.mdf
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\bin\Debug\Model\IBDatabase_log.ldf
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Debug\IBGames.View.GameChooseDialog.resources
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Debug\IBGames.View.AdminForm.resources
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Debug\IBGames.View.OperatorForm.resources

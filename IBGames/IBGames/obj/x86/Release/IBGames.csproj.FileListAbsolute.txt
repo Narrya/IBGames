@@ -1,0 +1,45 @@
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\bin\Release\IBGames.exe.config
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\bin\Release\IBGames.exe
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\bin\Release\IBGames.pdb
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Release\IBGames.LoginForm.resources
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Release\IBGames.Properties.Resources.resources
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Release\IBGames.RegistrationForm.resources
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Release\IBGames.exe
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Release\IBGames.pdb
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Release\IBGames.Game.resources
+D:\Dokumenty\Studia\Semestr 8\IBGames\IBGames\bin\Release\IBGames.exe.config
+D:\Dokumenty\Studia\Semestr 8\IBGames\IBGames\obj\x86\Release\IBGames.exe
+D:\Dokumenty\Studia\Semestr 8\IBGames\IBGames\obj\x86\Release\IBGames.pdb
+D:\Dokumenty\Studia\Semestr 8\IBGames\IBGames\bin\Release\IBDatabase.mdf
+D:\Dokumenty\Studia\Semestr 8\IBGames\IBGames\bin\Release\IBDatabase_log.ldf
+D:\Dokumenty\Studia\Semestr 8\IBGames\IBGames\bin\Release\IBGames.exe
+D:\Dokumenty\Studia\Semestr 8\IBGames\IBGames\bin\Release\IBGames.pdb
+D:\Dokumenty\Studia\Semestr 8\IBGames\IBGames\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Dokumenty\Studia\Semestr 8\IBGames\IBGames\obj\x86\Release\IBGames.Game.resources
+D:\Dokumenty\Studia\Semestr 8\IBGames\IBGames\obj\x86\Release\IBGames.LoginForm.resources
+D:\Dokumenty\Studia\Semestr 8\IBGames\IBGames\obj\x86\Release\IBGames.Properties.Resources.resources
+D:\Dokumenty\Studia\Semestr 8\IBGames\IBGames\obj\x86\Release\IBGames.RegistrationForm.resources
+D:\Dokumenty\Studia\Semestr 8\IBGames\IBGames\obj\x86\Release\GenerateResource.read.1.tlog
+D:\Dokumenty\Studia\Semestr 8\IBGames\IBGames\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\user\Desktop\repo\IBGames\IBGames\bin\Release\IBGames.exe.config
+C:\Users\user\Desktop\repo\IBGames\IBGames\obj\x86\Release\IBGames.exe
+C:\Users\user\Desktop\repo\IBGames\IBGames\obj\x86\Release\IBGames.pdb
+C:\Users\user\Desktop\repo\IBGames\IBGames\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\user\Desktop\repo\IBGames\IBGames\obj\x86\Release\IBGames.Game.resources
+C:\Users\user\Desktop\repo\IBGames\IBGames\obj\x86\Release\IBGames.LoginForm.resources
+C:\Users\user\Desktop\repo\IBGames\IBGames\obj\x86\Release\IBGames.Properties.Resources.resources
+C:\Users\user\Desktop\repo\IBGames\IBGames\obj\x86\Release\IBGames.RegistrationForm.resources
+C:\Users\user\Desktop\repo\IBGames\IBGames\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\user\Desktop\repo\IBGames\IBGames\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\user\Desktop\repo\IBGames\IBGames\bin\Release\IBDatabase.mdf
+C:\Users\user\Desktop\repo\IBGames\IBGames\bin\Release\IBDatabase_log.ldf
+C:\Users\user\Desktop\repo\IBGames\IBGames\bin\Release\IBGames.exe
+C:\Users\user\Desktop\repo\IBGames\IBGames\bin\Release\IBGames.pdb
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\bin\Release\Model\IBDatabase.mdf
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\bin\Release\Model\IBDatabase_log.ldf
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Release\IBGames.View.AdminForm.resources
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Release\IBGames.View.GameChooseDialog.resources
+C:\Users\user\Desktop\repo\IP---gry\IBGames\IBGames\obj\x86\Release\IBGames.View.OperatorForm.resources
