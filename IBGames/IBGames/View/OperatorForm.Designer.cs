@@ -28,46 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.AssociatedStudents = new System.Windows.Forms.DataGridView();
+            this.AllStudents = new System.Windows.Forms.DataGridView();
+            this.btnAssociateStudents = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.AssociatedStudents)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AllStudents)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // AssociatedStudents
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(271, 339);
-            this.dataGridView1.TabIndex = 0;
+            this.AssociatedStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.AssociatedStudents.Location = new System.Drawing.Point(12, 12);
+            this.AssociatedStudents.Name = "AssociatedStudents";
+            this.AssociatedStudents.Size = new System.Drawing.Size(389, 339);
+            this.AssociatedStudents.TabIndex = 0;
             // 
-            // dataGridView2
+            // AllStudents
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(289, 12);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(306, 300);
-            this.dataGridView2.TabIndex = 1;
+            this.AllStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.AllStudents.Location = new System.Drawing.Point(407, 12);
+            this.AllStudents.Name = "AllStudents";
+            this.AllStudents.Size = new System.Drawing.Size(375, 300);
+            this.AllStudents.TabIndex = 1;
             // 
-            // button1
+            // btnAssociateStudents
             // 
-            this.button1.Location = new System.Drawing.Point(289, 318);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(306, 33);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Associate selected to me";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAssociateStudents.Location = new System.Drawing.Point(407, 318);
+            this.btnAssociateStudents.Name = "btnAssociateStudents";
+            this.btnAssociateStudents.Size = new System.Drawing.Size(375, 33);
+            this.btnAssociateStudents.TabIndex = 2;
+            this.btnAssociateStudents.Text = "Associate selected to me";
+            this.btnAssociateStudents.UseVisualStyleBackColor = true;
+            this.btnAssociateStudents.Click += new System.EventHandler(this.btnAssociateStudents_Click);
             // 
             // OperatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(607, 363);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(794, 363);
+            this.Controls.Add(this.btnAssociateStudents);
+            this.Controls.Add(this.AllStudents);
+            this.Controls.Add(this.AssociatedStudents);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -76,16 +77,17 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Operator module";
             this.TopMost = true;
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.Load += new System.EventHandler(this.OperatorForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.AssociatedStudents)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AllStudents)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView AssociatedStudents;
+        private System.Windows.Forms.DataGridView AllStudents;
+        private System.Windows.Forms.Button btnAssociateStudents;
     }
 }

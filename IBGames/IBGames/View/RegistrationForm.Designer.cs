@@ -48,7 +48,7 @@
             this.btnRegistrationOK.Location = new System.Drawing.Point(143, 256);
             this.btnRegistrationOK.Name = "btnRegistrationOK";
             this.btnRegistrationOK.Size = new System.Drawing.Size(75, 23);
-            this.btnRegistrationOK.TabIndex = 0;
+            this.btnRegistrationOK.TabIndex = 5;
             this.btnRegistrationOK.Text = "OK";
             this.btnRegistrationOK.UseVisualStyleBackColor = true;
             this.btnRegistrationOK.Click += new System.EventHandler(this.btnRegistrationOK_Click);
@@ -67,7 +67,7 @@
             this.lnkCancel.Location = new System.Drawing.Point(240, 261);
             this.lnkCancel.Name = "lnkCancel";
             this.lnkCancel.Size = new System.Drawing.Size(40, 13);
-            this.lnkCancel.TabIndex = 2;
+            this.lnkCancel.TabIndex = 6;
             this.lnkCancel.TabStop = true;
             this.lnkCancel.Text = "Cancel";
             this.lnkCancel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkCancel_LinkClicked);
@@ -77,14 +77,14 @@
             this.tbLogin.Location = new System.Drawing.Point(109, 146);
             this.tbLogin.Name = "tbLogin";
             this.tbLogin.Size = new System.Drawing.Size(163, 20);
-            this.tbLogin.TabIndex = 3;
+            this.tbLogin.TabIndex = 1;
             // 
             // tbPassword
             // 
             this.tbPassword.Location = new System.Drawing.Point(109, 172);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(163, 20);
-            this.tbPassword.TabIndex = 4;
+            this.tbPassword.TabIndex = 2;
             this.tbPassword.UseSystemPasswordChar = true;
             // 
             // cbIsStudent
@@ -95,7 +95,7 @@
             this.cbIsStudent.Location = new System.Drawing.Point(256, 224);
             this.cbIsStudent.Name = "cbIsStudent";
             this.cbIsStudent.Size = new System.Drawing.Size(16, 24);
-            this.cbIsStudent.TabIndex = 5;
+            this.cbIsStudent.TabIndex = 4;
             this.cbIsStudent.UseVisualStyleBackColor = true;
             // 
             // lblLogin
@@ -130,7 +130,7 @@
             this.tbPasswordAgain.Location = new System.Drawing.Point(109, 198);
             this.tbPasswordAgain.Name = "tbPasswordAgain";
             this.tbPasswordAgain.Size = new System.Drawing.Size(163, 20);
-            this.tbPasswordAgain.TabIndex = 9;
+            this.tbPasswordAgain.TabIndex = 3;
             this.tbPasswordAgain.UseSystemPasswordChar = true;
             // 
             // lblPasswordAgain

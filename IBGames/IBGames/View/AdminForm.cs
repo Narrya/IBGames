@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
+using IBGames.DataAccess;
 
 namespace IBGames.View
 {
@@ -23,7 +18,20 @@ namespace IBGames.View
         public AdminForm(string username)
         {
             InitializeComponent();
-            _username = username;                 
+            _username = username;
+        }
+
+        /// <summary>
+        /// Handles the Load event of the AdminForm control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
+        private void AdminForm_Load(object sender, EventArgs e)
+        {
+            UsersDataAccess dataAccess = new UsersDataAccess();
+            AllResultsGrid.DataSource = dataAccess.GetUsers();
+
+            AllResultsGrid.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader);
         }
     }
 }
