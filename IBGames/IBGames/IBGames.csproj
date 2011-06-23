@@ -69,6 +69,20 @@
     <Compile Include="Business\UserFactory.cs" />
     <Compile Include="DataAccess\ScoresDataAccess.cs" />
     <Compile Include="DataAccess\UsersDataAccess.cs" />
+    <Compile Include="Tetris\element.cs" />
+    <Compile Include="Tetris\element_big.cs" />
+    <Compile Include="Tetris\Gra.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tetris\Plansza.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tetris\Tetris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tetris\Tetris.designer.cs">
+      <DependentUpon>Tetris.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +126,9 @@
     <Compile Include="View\RegistrationForm.Designer.cs">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Tetris\Tetris.resx">
+      <DependentUpon>Tetris.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,7 +157,9 @@
     <EmbeddedResource Include="View\RegistrationForm.resx">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Model\IBDatabaseDataSet.xsc">
       <DependentUpon>IBDatabaseDataSet.xsd</DependentUpon>
     </None>
@@ -208,6 +227,10 @@
       <DependentUpon>IBDatabase.mdf</DependentUpon>
     </Content>
     <Content Include="Resources\IBLogo.png" />
+    <Content Include="Tetris\Sounds\bridge2.wav" />
+    <Content Include="Tetris\Sounds\chord.wav" />
+    <Content Include="Tetris\Sounds\error.wav" />
+    <Content Include="Tetris\Sounds\frogs.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

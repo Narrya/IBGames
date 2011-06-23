@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using projekt;
 
 namespace IBGames.View
 {
@@ -38,11 +39,11 @@ namespace IBGames.View
 
         private void SecondGame_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not implemented yet.", "Information",
-                            MessageBoxButtons.OK, MessageBoxIcon.Information);
-
             this.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.Close();
+
+            Tetris tetris = new Tetris();
+            tetris.ShowDialog(this);
         }
 
         private void ThirdGame_Click(object sender, EventArgs e)
