@@ -102,11 +102,10 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "HELP:    F1";
             // 
-            // Form1
+            // Tetris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(442, 496);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.poziom);
@@ -114,9 +113,14 @@
             this.Controls.Add(this.lbl_poziomow);
             this.Controls.Add(this.lbl_punktow);
             this.Controls.Add(this.next);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.KeyPreview = true;
-            this.Name = "Form1";
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Tetris";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tetris";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

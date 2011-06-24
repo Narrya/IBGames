@@ -31,7 +31,11 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanelMain = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnNewGame = new System.Windows.Forms.Button();
+            this.lblResult = new System.Windows.Forms.Label();
+            this.lblResultValue = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -64,12 +68,43 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.lblResultValue);
+            this.groupBox2.Controls.Add(this.lblResult);
+            this.groupBox2.Controls.Add(this.btnNewGame);
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(182, 388);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Menu";
+            this.groupBox2.Text = "Informations";
+            // 
+            // btnNewGame
+            // 
+            this.btnNewGame.Location = new System.Drawing.Point(6, 157);
+            this.btnNewGame.Name = "btnNewGame";
+            this.btnNewGame.Size = new System.Drawing.Size(170, 37);
+            this.btnNewGame.TabIndex = 0;
+            this.btnNewGame.Text = "New Game";
+            this.btnNewGame.UseVisualStyleBackColor = true;
+            this.btnNewGame.Click += new System.EventHandler(this.btnNewGame_Click);
+            // 
+            // lblResult
+            // 
+            this.lblResult.AutoSize = true;
+            this.lblResult.Location = new System.Drawing.Point(11, 214);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(40, 13);
+            this.lblResult.TabIndex = 1;
+            this.lblResult.Text = "Wynik:";
+            // 
+            // lblResultValue
+            // 
+            this.lblResultValue.AutoSize = true;
+            this.lblResultValue.Location = new System.Drawing.Point(141, 214);
+            this.lblResultValue.Name = "lblResultValue";
+            this.lblResultValue.Size = new System.Drawing.Size(13, 13);
+            this.lblResultValue.TabIndex = 2;
+            this.lblResultValue.Text = "0";
             // 
             // Game
             // 
@@ -78,11 +113,16 @@
             this.ClientSize = new System.Drawing.Size(693, 415);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Game";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Memo";
             this.TopMost = true;
             this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -92,5 +132,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelMain;
+        private System.Windows.Forms.Label lblResultValue;
+        private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.Button btnNewGame;
     }
 }

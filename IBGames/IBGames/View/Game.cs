@@ -9,6 +9,7 @@ using System.Timers;
 using System.Threading;
 using System.Windows.Forms;
 using System.Drawing;
+using IBGames.View;
 
 namespace IBGames
 {
@@ -40,7 +41,12 @@ namespace IBGames
         /// <summary>
         /// 
         /// </summary>
-        public int[] SelectedCards { get; set; }
+        public int WholeClicks { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public KeyValuePair<int, Button>[] SelectedCards { get; set; }
 
         /// <summary>
         /// 
@@ -53,7 +59,14 @@ namespace IBGames
             _username = username;
 
             ClicksCount = 0;
-            SelectedCards = new int[2] { -1, -1 };
+
+            WholeClicks = 0;
+            lblResultValue.Text = WholeClicks.ToString();
+
+            SelectedCards = new KeyValuePair<int,Button>[2] {   
+                                                                new KeyValuePair<int, Button>(-1, null), 
+                                                                new KeyValuePair<int, Button>(-1, null) 
+                                                            };
             FillDictionaryWithRandomNumbers();
         }
 
@@ -113,7 +126,7 @@ namespace IBGames
             foreach (System.Windows.Forms.Control controls in tableLayoutPanelMain.Controls)
             {
                 dynamicButton = controls as Button;
-                if (dynamicButton != null)
+                if (dynamicButton != null && dynamicButton.Enabled)
                 {
                     dynamicButton.Text = string.Empty;
                 }
@@ -130,6 +143,9 @@ namespace IBGames
         {
             Button eventSource = (Button)sender;
 
+            WholeClicks++;
+            lblResultValue.Text = WholeClicks.ToString();
+
             if (string.IsNullOrWhiteSpace(eventSource.Text))
             {
                 if (ClicksCount == 2)
@@ -138,26 +154,54 @@ namespace IBGames
 
                     ClearTextOnButtons();
 
-                    SelectedCards[0] = -1;
-                    SelectedCards[1] = -1;
+                    SelectedCards[0] = new KeyValuePair<int, Button>(-1, null);
+                    SelectedCards[1] = new KeyValuePair<int, Button>(-1, null);
                 }
 
                 string name = eventSource.Name;
                 eventSource.Text = dictionaryNumbers[eventSource.Name].ToString();
 
                 ClicksCount++;
-                SelectedCards[ClicksCount - 1] = dictionaryNumbers[eventSource.Name];
+                SelectedCards[ClicksCount - 1] = new KeyValuePair<int, Button>(dictionaryNumbers[eventSource.Name.ToString()], eventSource);
 
                 if (ClicksCount == 2)
                 {
-                    if (SelectedCards[0] == SelectedCards[1] && SelectedCards[0] != -1 && SelectedCards[1] != -1)
+                    if (SelectedCards[0].Key == SelectedCards[1].Key && SelectedCards[0].Key != -1 && SelectedCards[1].Key != -1)
                     {
-                        MessageBox.Show("You've found a pair!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        SelectedCards[0].Value.Enabled = false;
+                        SelectedCards[1].Value.Enabled = false;
                     }
                 }
             }
+
+            if (IsGameEnded())
+            {
+                MessageBox.Show("You've finished the game!", "Congratulations",
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);                
+            }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public bool IsGameEnded()
+        {
+            Button dynamicButton = null;
+            bool result = true;
+
+            foreach (System.Windows.Forms.Control controls in tableLayoutPanelMain.Controls)
+            {
+                dynamicButton = controls as Button;
+                if (dynamicButton.Enabled)
+                {
+                    result = false;
+                    break;
+                }
+            }
+
+            return result;
+        }
 
         /// <summary>
         /// 
@@ -208,6 +252,37 @@ namespace IBGames
             }
 
             return randomized;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnNewGame_Click(object sender, EventArgs e)
+        {
+            ClicksCount = 0;
+            
+            WholeClicks = 0;
+            lblResultValue.Text = WholeClicks.ToString();
+
+            SelectedCards = new KeyValuePair<int, Button>[2] {   
+                                                                new KeyValuePair<int, Button>(-1, null), 
+                                                                new KeyValuePair<int, Button>(-1, null) 
+                                                            };
+            FillDictionaryWithRandomNumbers();
+
+            Button dynamicButton = null;
+
+            foreach (System.Windows.Forms.Control controls in tableLayoutPanelMain.Controls)
+            {
+                dynamicButton = controls as Button;
+                if (dynamicButton != null)
+                {
+                    dynamicButton.Text = string.Empty;
+                    dynamicButton.Enabled = true;
+                }
+            }
         }
     }
 }
